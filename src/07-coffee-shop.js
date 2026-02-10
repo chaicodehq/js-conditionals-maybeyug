@@ -32,4 +32,157 @@
  */
 export function calculateCoffeePrice(size, type, extras = {}) {
   // Your code here
+  if (
+    (size === "small" || (size === "medium") | (size === "large")) &&
+    (type === "regular" ||
+      type === "latte" ||
+      type === "cappuccino" ||
+      type === "mocha")
+  ) {
+    let cost = 0.0;
+    if (size === "small") {
+      cost += 3.0;
+      if (type === "regular") {
+        cost += 0.0;
+        if (extras) {
+          if (extras.whippedCream) {
+            cost += 0.5;
+          }
+          if (extras.extraShot) {
+            cost += 0.75;
+          }
+        }
+        return cost;
+      } else if (type === "latte") {
+        cost += 1.0;
+        if (extras) {
+          if (extras.whippedCream) {
+            cost += 0.5;
+          }
+          if (extras.extraShot) {
+            cost += 0.75;
+          }
+        }
+        return cost;
+      } else if (type === "cappuccino") {
+        cost += 1.5;
+        if (extras) {
+          if (extras.whippedCream) {
+            cost += 0.5;
+          }
+          if (extras.extraShot) {
+            cost += 0.75;
+          }
+        }
+        return cost;
+      } else {
+        cost += 2.0;
+        if (extras) {
+          if (extras.whippedCream) {
+            cost += 0.5;
+          }
+          if (extras.extraShot) {
+            cost += 0.75;
+          }
+        }
+        return cost;
+      }
+    } else if (size === "medium") {
+      cost += 4.0;
+      if (type === "regular") {
+        cost += 0.0;
+        if (extras) {
+          if (extras.whippedCream) {
+            cost += 0.5;
+          }
+          if (extras.extraShot) {
+            cost += 0.75;
+          }
+        }
+        return cost;
+      } else if (type === "latte") {
+        cost += 1.0;
+        if (extras) {
+          if (extras.whippedCream) {
+            cost += 0.5;
+          }
+          if (extras.extraShot) {
+            cost += 0.75;
+          }
+        }
+        return cost;
+      } else if (type === "cappuccino") {
+        cost += 1.5;
+        if (extras) {
+          if (extras.whippedCream) {
+            cost += 0.5;
+          }
+          if (extras.extraShot) {
+            cost += 0.75;
+          }
+        }
+        return cost;
+      } else {
+        cost += 2.0;
+        if (extras) {
+          if (extras.whippedCream) {
+            cost += 0.5;
+          }
+          if (extras.extraShot) {
+            cost += 0.75;
+          }
+        }
+        return cost;
+      }
+    } else {
+      cost += 5.0;
+      if (type === "regular") {
+        cost += 0.0;
+        if (extras) {
+          if (extras.whippedCream) {
+            cost += 0.5;
+          }
+          if (extras.extraShot) {
+            cost += 0.75;
+          }
+        }
+        return cost;
+      } else if (type === "latte") {
+        cost += 1.0;
+        if (extras) {
+          if (extras.whippedCream) {
+            cost += 0.5;
+          }
+          if (extras.extraShot) {
+            cost += 0.75;
+          }
+        }
+        return cost;
+      } else if (type === "cappuccino") {
+        cost += 1.5;
+        if (extras) {
+          if (extras.whippedCream) {
+            cost += 0.5;
+          }
+          if (extras.extraShot) {
+            cost += 0.75;
+          }
+        }
+        return cost;
+      } else {
+        cost += 2.0;
+        if (extras) {
+          if (extras.whippedCream) {
+            cost += 0.5;
+          }
+          if (extras.extraShot) {
+            cost += 0.75;
+          }
+        }
+        return cost;
+      }
+    }
+  } else {
+    return -1;
+  }
 }
